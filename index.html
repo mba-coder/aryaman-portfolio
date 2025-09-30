@@ -15,94 +15,103 @@
       margin: 0;
       padding: 0;
     }
+
     h2 {
       color: #222;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .navbar a:hover {
+      color: #e91e63;
+    }
+
+    .skills-section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .skills-section h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .skill-item {
+      margin-bottom: 2rem;
+    }
+
+    .skill-item img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .skill-name {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
     .contact-section {
       background-color: #000;
       color: #fff;
       padding: 4rem 2rem;
       text-align: center;
     }
+
     .contact-section h2 {
       font-size: 3rem;
       font-weight: bold;
       margin-bottom: 2rem;
       color: #fff;
     }
+
     .contact-icons img {
       width: 50px;
       height: 50px;
       margin: 0 15px;
     }
+
     .contact-info {
       margin-bottom: 2rem;
     }
-    .skills-section {
-      padding: 4rem 2rem;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    .skills-section h2 {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-    .skill-item {
-      margin-bottom: 2rem;
-    }
-    .skill-item img {
-      width: 80px;
-      height: 80px;
-    }
-    .skill-name {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-    
-  html {
-    scroll-behavior: smooth;
-  }
-
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #000;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar li {
-    display: inline;
-  }
-
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .navbar a:hover {
-    color: #e91e63;
-  }
-
   </style>
 </head>
-<body id="top">  <!-- Add id="top" here for 'Home' -->
-    
 
-  <!-- ✅ Sticky Navbar Starts -->
+<body id="top">
+
+  <!-- ✅ Sticky Navbar -->
   <nav class="navbar">
     <ul>
       <li><a href="#top">Home</a></li>
@@ -112,186 +121,115 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <!-- ✅ Sticky Navbar Ends -->
 
-  
-
-
-  <!-- About Section -->
+  <!-- ✅ About Section -->
   <section id="about" style="text-align: center; padding: 4rem 2rem;">
     <h2 style="font-size: 3rem; font-weight: bold; margin-bottom: 2rem;">About</h2>
-
     <img 
-      src="images/about/1.jpg" 
+      src="1.jpg" 
       alt="Profile Picture" 
       style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 2rem;"
     />
-
     <p style="max-width: 700px; margin: 0 auto 1.5rem auto; font-size: 1.1rem; line-height: 1.6; color: #333;">
       I am a passionate business analytics professional who thrives on solving real-world problems through data. 
       I enjoy turning complex information into clear, actionable insights that help teams make better decisions. 
       With a strong foundation in tools like SQL, Python, Power BI, and Tableau, I work well under pressure and 
-      value collaboration and continuous learning. I believe that the best solutions come from asking the right 
-      questions, listening to diverse perspectives, and staying focused on results.
+      value collaboration and continuous learning.
     </p>
   </section>
 
-  <!-- Projects Section -->
+  <!-- ✅ Projects Section -->
   <section id="projects" class="py-5 text-center" style="background-color: #f9f9f9;">
     <div class="container">
       <h2 class="mb-5" style="font-size: 3rem; font-weight: bold;">Projects</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <!-- Project 1 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="images/projects/1.jpg" class="card-img-top" alt="Amazon Prime Dashboard">
+            <img src="2.jpg" class="card-img-top" alt="Amazon Prime Dashboard">
             <div class="card-body">
               <h5 class="card-title"><strong>Amazon Prime Dashboard</strong></h5>
-              <p class="card-text">
-                Built a comprehensive Power BI dashboard analyzing Amazon Prime customer behavior, subscription trends, and content engagement. Included DAX measures, filters, and KPIs for executive decision-making.
-              </p>
+              <p class="card-text">Built a Power BI dashboard analyzing customer behavior & engagement with KPIs.</p>
               <a href="https://github.com/mba-coder" target="_blank" class="btn btn-primary">Source Code</a>
             </div>
           </div>
         </div>
-
-        <!-- Project 2 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="images/projects/2.jpg" class="card-img-top" alt="Smart University Database">
+            <img src="3.jpg" class="card-img-top" alt="University DB">
             <div class="card-body">
               <h5 class="card-title"><strong>Smart University Database</strong></h5>
-              <p class="card-text">
-                Built an end-to-end student and HR information system using MySQL, Excel, and Tableau. Included ERD, star schema, student enrollment, fees, professor assignments, and GPA tracking.
-              </p>
+              <p class="card-text">End-to-end student & HR system using SQL, Tableau, and Excel.</p>
               <a href="https://github.com/mba-coder" target="_blank" class="btn btn-primary">Source Code</a>
             </div>
           </div>
         </div>
-
-        <!-- Project 3 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="images/projects/3.jpg" class="card-img-top" alt="Supply Chain SQL Project">
+            <img src="4.jpg" class="card-img-top" alt="Supply Chain">
             <div class="card-body">
               <h5 class="card-title"><strong>Supply Chain Analysis (SQL)</strong></h5>
-              <p class="card-text">
-                Performed supply chain analytics using SQL on inventory, supplier, and delivery datasets. Optimized queries to identify delays, stockouts, and fulfillment patterns, enabling strategic procurement decisions.
-              </p>
+              <p class="card-text">SQL project on inventory, supplier delays, and fulfillment patterns.</p>
               <a href="https://github.com/mba-coder" target="_blank" class="btn btn-primary">Source Code</a>
             </div>
           </div>
         </div>
-
-        <!-- Project 4 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="images/projects/4.jpg" class="card-img-top" alt="Facebook Python Project">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Facebook Data Analysis (Python)</strong></h5>
-              <p class="card-text">
-                Used Python and Pandas to analyze Facebook user data and engagement metrics. Visualized trends and delivered actionable insights via Matplotlib and Seaborn.
-              </p>
-              <a href="https://github.com/mba-coder" target="_blank" class="btn btn-primary">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="images/projects/5.jpg" class="card-img-top" alt="Weather Forecast Python Project">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Weather Forecast App (Python)</strong></h5>
-              <p class="card-text">
-                Developed a Python-based CLI app using APIs to fetch and visualize real-time weather data for multiple cities. Used requests, JSON, and basic error handling.
-              </p>
-              <a href="https://github.com/mba-coder" target="_blank" class="btn btn-primary">Source Code</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Skills & Certifications Section -->
+  <!-- ✅ Skills & Certifications -->
   <section id="skills" class="skills-section">
     <h2>Skills & Certifications</h2>
     <div class="row justify-content-center">
-
       <div class="col-6 col-md-2 skill-item">
-        <a href="https://www.udemy.com/course/python-foundations-for-data-analysis/learn/lecture/31886348?start=0#overview/" target="_blank">
-          <img src="images/skills/1.png" alt="Power BI">
+        <a href="https://www.udemy.com/course/python-foundations-for-data-analysis/" target="_blank">
+          <img src="5.png" alt="Python">
           <div class="skill-name">Python</div>
         </a>
       </div>
-
       <div class="col-6 col-md-2 skill-item">
         <a href="https://www.udemy.com/course/tableau-certified-data-analyst/" target="_blank">
-          <img src="images/skills/2.png" alt="Tableau">
-          <div class="skill-name">Tableau Certified Analyst</div>
+          <img src="6.png" alt="Tableau">
+          <div class="skill-name">Tableau Analyst</div>
         </a>
       </div>
-
       <div class="col-6 col-md-2 skill-item">
-        <a href="https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/learn/quiz/6467939#overview/" target="_blank">
-          <img src="images/skills/3.png" alt="Python">
+        <a href="https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/" target="_blank">
+          <img src="7.png" alt="MySQL">
           <div class="skill-name">MySQL</div>
         </a>
       </div>
-
       <div class="col-6 col-md-2 skill-item">
-        <a href="https://www.udemy.com/course/70-778-analyzing-and-visualizing-data-with-power-bi/learn/lecture/16316466?start=1#overview/" target="_blank">
-          <img src="images/skills/4.png" alt="SQL">
-          <div class="skill-name">PowerBI</div>
+        <a href="https://www.udemy.com/course/70-778-analyzing-and-visualizing-data-with-power-bi/" target="_blank">
+          <img src="8.png" alt="Power BI">
+          <div class="skill-name">Power BI</div>
         </a>
       </div>
-
       <div class="col-6 col-md-2 skill-item">
-        <a href="https://skillbuilder.aws/learning-plan/SPAH27CQ2M/aws-simulearn-data-analytics/UEXC1URG8Y" target="_blank">
-          <img src="images/skills/5.png" alt="AWS">
-          <div class="skill-name">AWS Data Analytics</div>
+        <a href="https://skillbuilder.aws/learning-plan/SPAH27CQ2M/aws-simulearn-data-analytics/" target="_blank">
+          <img src="9.png" alt="AWS">
+          <div class="skill-name">AWS Analytics</div>
         </a>
       </div>
-
     </div>
   </section>
-  
 
-  
-
-  
-  <!-- Contact Me Section -->
-<section id="contact" class="contact-section" style="background-color: #000; color: #fff; padding: 4rem 2rem; text-align: center;">
-  <h2 style="font-size: 3rem; font-weight: bold; color: #fff;">Contact Me</h2>
-
-  <!-- Contact Info -->
-  <div class="contact-info" style="margin: 2rem 0;">
-    <p style="font-size: 1.2rem;">
-      <img src="icons/email.png" alt="Email" style="width: 30px; vertical-align: middle; margin-right: 10px;">
-      aryamanpillay10@gmail.com
-    </p>
-    <p style="font-size: 1.2rem;">
-      <img src="icons/phone.png" alt="Phone" style="width: 30px; vertical-align: middle; margin-right: 10px;">
-      +1 (628) 777-9883
-    </p>
-  </div>
-
-  <!-- Social Icons -->
-  <div class="d-flex justify-content-center gap-4 mt-4">
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/aryamanpillay" target="_blank">
-      <img src="icons/linkedin.png" alt="LinkedIn" style="width: 60px;">
-    </a>
-
-    <!-- GitHub -->
-    <a href="https://github.com/mba-coder" target="_blank">
-      <img src="icons/github.png" alt="GitHub" style="width: 60px;">
-    </a>
-  </div>
-</section>
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><img src="email.png" alt="Email" style="width: 30px; vertical-align: middle; margin-right: 10px;"> aryamanpillay10@gmail.com</p>
+      <p><img src="phone.png" alt="Phone" style="width: 30px; vertical-align: middle; margin-right: 10px;"> +1 (628) 777-9883</p>
+    </div>
+    <div class="d-flex justify-content-center gap-4 mt-4">
+      <a href="https://www.linkedin.com/in/aryamanpillay" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn" style="width: 60px;">
+      </a>
+      <a href="https://github.com/mba-coder" target="_blank">
+        <img src="github.png" alt="GitHub" style="width: 60px;">
+      </a>
+    </div>
+  </section>
 
 </body>
 </html>
